@@ -5,9 +5,49 @@
     <link rel="stylesheet" type="text/css" href="style.css"> </head>
 
 <body>
+  <main>
+    <table>
+      <tr>
+        <td colspan="2"  class="title">
+          <label>TIP CALCULATOR</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="left-column">
+          <label>Please Enter Total Bill Amount: </label>
+        </td>
+        <td class="right-column">
+          <input type="number">
+        </td>
+      </tr>
+      <tr>
+        <td class="left-column">
+          <label>Please Enter Tip Percent: </label>
+        </td>
+        <td class="right-column">
+          <input type="number" value="15">
+        </td>
+      </tr>
+      <tr>
+        <td class="left-column">
+        </td>
+        <td class="right-column">
+          <button type="button">CALCULATE</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="left-column bottom-left">
+          <label>Amount to Tip: </label>
+        </td>
+        <td class="right-column bottom-right">
+          <div class="output"></div>
+        </td>
+      </tr>
+    </table>
+  </main>
     <div class="output"></div>
     <input type="number" value="100">
-    <button type="button">Tip 1</button>
+    <button type="button">CALCULATE</button>
     <script src="script.js">
     </script>
 </body>
