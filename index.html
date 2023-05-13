@@ -2,10 +2,11 @@
 
 <head>
     <title>JavaScript</title>
-    <link rel="stylesheet" type="text/css" href="style.css"> </head>
-
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
 <body>
   <main>
+    <form>
     <table>
       <tr>
         <td colspan="2"  class="title">
@@ -13,26 +14,28 @@
         </td>
       </tr>
       <tr>
-        <td class="left-column">
+        <td class="left-column total">
           <label>Please Enter Total Bill Amount: </label>
         </td>
         <td class="right-column">
-          <input type="number">
+          <input type="number" id="total" value="0">
         </td>
       </tr>
       <tr>
         <td class="left-column">
           <label>Please Enter Tip Percent: </label>
         </td>
-        <td class="right-column">
-          <input type="number" value="15">
+        <td class="right-column tip">
+          <input type="number" id="tip" value="15">
         </td>
       </tr>
       <tr>
         <td class="left-column">
         </td>
         <td class="right-column">
-          <button type="button">CALCULATE</button>
+          <button type="button" id="button">CALCULATE</button>
+            <script src="script.js">
+            </script>
         </td>
       </tr>
       <tr>
@@ -40,16 +43,10 @@
           <label>Amount to Tip: </label>
         </td>
         <td class="right-column bottom-right">
-          <div class="output"></div>
+          <div class="output" id="output"></div>
         </td>
       </tr>
-    </table>
-  </main>
-    <div class="output"></div>
-    <input type="number" value="100">
-    <button type="button">CALCULATE</button>
-    <script src="script.js">
-    </script>
+    </table> 
+      </form>
 </body>
-
 </html>

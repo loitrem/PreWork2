@@ -1,10 +1,11 @@
-const button = document.querySelector("button");
-const output = document.querySelector(".output");
+const button = document.getElementById('button');
+const output = document.getElementById('output');
 console.log(button);
 button.addEventListener("click",function(){
-    const cost = document.querySelector("input");
-    console.log(cost.value *0.15);
-    let tip = (cost.value *0.15).toFixed(2);
-    let temp = `<h1>You should tip $${tip} on $${cost.value}</h1>`;
-    output.innerHTML = temp;
+    const cost = document.getElementById('total').value;
+    const percent = document.getElementById('tip').value;
+    console.log(cost *(percent/100));
+    let tip = (cost *(percent/100)).toFixed(2);
+    let temp = `$${tip}`;
+    document.getElementById('output').innerHTML = temp;
 })
